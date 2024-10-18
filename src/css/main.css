@@ -1,0 +1,153 @@
+header {
+    
+    padding: 10px;
+  }
+
+  #reg-button{
+    background-color: #fff;
+    border-radius: 9px;
+    color: rgb(0, 0, 0);
+  }
+  body {
+    background-image: url("../img/pkx.png");
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    position: relative; 
+  }
+  
+
+  nav{
+    border-radius: 9px;
+    background-color: black;
+    height: 40px;
+    padding: 12px 50px;
+    font-size: 22px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 2px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; 
+    transition: all 0.3s ease; 
+    border-radius: 5px;
+    padding: 8px 12px; 
+  }
+  
+  nav a:hover {
+    font-size: 22px;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .w-bg{
+    border-radius: 18px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    z-index: -1; 
+
+  }
+
+  .btn-b{
+    font-size: 18px;
+    background-color: rgba(65, 27, 202, 0.774);
+    color: white;
+    border-radius: 9px;
+    border-style: none;
+    padding: 10px;
+  }
+  .hero-textsa {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+  }
+  
+  .hero-texta {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    margin: 0; 
+  }
+
+  .mycon{
+    position: relative;
+  }
+
+  .facilities { 
+    display: inline;
+    /* ... other styles for .facilities if needed ... */
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .gallery img {
+    width: 30%;
+    border-radius: 8px;
+    height: 30vh; 
+  }
+
+  .signup-body {
+    background-color: black;
+    color: white; 
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+  }
+  
+  .container {
+    background-color: #222; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 350px; 
+  }
+  
+  .form-group {
+    margin-bottom: 20px; 
+  }
+  
+  .signup-body label {
+    display: block; 
+    margin-bottom: 5px;
+  }
+  
+  .signup-body input {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+  }
+  
+  .signup-body button {
+    background-color: blue; 
+    color: white;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    width: 100%; 
+  }
