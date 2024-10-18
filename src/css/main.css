@@ -151,3 +151,11 @@ header {
     cursor: pointer; 
     width: 100%; 
   }
+ .signup-body-nav{
+    position: absolute;
+    top: 2px;
+    display: inline;
+    margin: 0 auto;
+    z-index: 1;
+    width: auto;
+ }

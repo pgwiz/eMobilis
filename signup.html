@@ -3,36 +3,72 @@
 <head>
   <title>Registration Form</title>
   <link rel="stylesheet" href="src/css/main.css">
-</head>
+
+  
 <body class="signup-body">
+ <style>
+   .svg-w {
+    filter: brightness(0) invert(1);
+  }
+ 
+
+#slider {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px; 
+  transform: translateX(100%);
+  transition: transform 0.5s ease; 
+}
+
+#slider.hidden {
+  display: none; 
+}
+
+#slider.slide-in {
+  transform: translateX(0);
+}
+ </style>
+
+<nav class="signup-body-nav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Sign Up</a></li>
+  </ul>
+  
+</nav>
 
   <div class="container"> 
     <h2>Register</h2>
     <form>
       <div class="form-group">
         <label for="name">
-          <img src="src/fa-66-web/svgs/solid/person-circle-plus.svg" width="15px" height="15px" alt="Person icon"> Name
+          <img src="src/fa-66-web/svgs/solid/person-circle-plus.svg" class="svg-w" width="15px" height="15px" alt="Person icon"> Name
         </label>
         <input type="text" id="name" name="name" required>
       </div>
 
       <div class="form-group">
         <label for="email">
-          <img src="src/fa-66-web/svgs/solid/envelope.svg" width="15px" height="15px" alt="Envelope icon"> Email
+          <img src="src/fa-66-web/svgs/solid/envelope.svg" class="svg-w" width="15px" height="15px" alt="Envelope icon"> Email
         </label>
         <input type="email" id="email" name="email" required>
       </div>
 
       <div class="form-group">
         <label for="password">
-          <img src="src/fa-66-web/svgs/solid/lock.svg" width="15px" height="15px" alt="Lock icon"> Password
+          <img src="src/fa-66-web/svgs/solid/lock.svg" class="svg-w" width="15px" height="15px" alt="Lock icon"> Password
         </label>
         <input type="password" id="password" name="password" required>
       </div>
 
       <div class="form-group">
         <label for="confirm-password">
-          <img src="src/fa-66-web/svgs/solid/lock.svg" width="15px" height="15px" alt="Lock icon"> Confirm Password
+          <img src="src/fa-66-web/svgs/solid/lock.svg" class="svg-w" width="15px" height="15px" alt="Lock icon"> Confirm Password
         </label>
         <input type="password" id="confirm-password" name="confirm-password" required> 
       </div>
@@ -40,6 +76,21 @@
       <button type="submit">Register</button> 
     </form>
   </div>
+  <div id="slider" class="hidden"> 
+    <h2>Welcome!</h2>
+    <p>Thank you for registering.</p>
+  </div>
+</div>
 
+<script>
+  const form = document.getElementById('registration-form');
+  const slider = document.getElementById('slider');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+    slider.classList.remove('hidden');
+    slider.classList.add('slide-in'); 
+  });
+</script>
 </body>
 </html>
